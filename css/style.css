@@ -319,7 +319,7 @@ body {
 @supports (-webkit-touch-callout: none) {
   /* Aturan CSS khusus untuk browser iOS */
   .aboutme {
-    margin: 0 50px; /* Atur padding kiri dan kanan */
+    margin: 0 40px; /* Atur padding kiri dan kanan */
   }
 }
 
