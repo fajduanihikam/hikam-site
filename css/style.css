@@ -315,6 +315,14 @@ body {
   font-style: italic;
   text-align: justify;
 }
+
+@supports (-webkit-touch-callout: none) {
+  /* Aturan CSS khusus untuk browser iOS */
+  .aboutme {
+    padding: 0 20px; /* Atur padding kiri dan kanan */
+  }
+}
+
 @media only screen and (max-width: 1235px) {
   .aboutme{
     display: grid;
