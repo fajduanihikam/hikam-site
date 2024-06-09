@@ -319,6 +319,8 @@ body {
   .aboutme{
     display: grid;
     width: 80%;
+    justify-content: center;
+    align-items: center;
   } 
   .aboutme p{
     font-size: small;
