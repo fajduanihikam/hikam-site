@@ -1,300 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>Hikam Fajduani</title>
-  <link rel="shortcut icon" type="image/png" href="images/hikam-profile.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hikam Fajduani</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/hikam-profile.png">
 </head>
-
 <body>
-  <div class="wrapper" id="home">
-
-    <div style="  z-index: 2;" class="topnav" id="myTopnav">
-      <a href="#home" class="active">Hikam Fajduani</a>
-      <a href="#about-me">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#experiences">Experience</a>
-      <a href="#contacts">Contacts</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
-
-    <div class="profile-container">
-      <div class="image-sampul" style="background-image: url('images/hikam-sampul.png');">
-        <div class="profile-photo-wrapper">
-          <img class="profile-photo" src="images/hikam-profile.png">
-          <h1 href="#home" >Hi! I'm <strong>Hikam</strong></h1>
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-      </div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a style="background-color: #EEEEEE; border-radius: 5px; color: #222831; font-weight: bold; padding-left: 10px; padding-right: 10px;" href="#home">Hikam Fajduani</a></li>
+            <li><a href="#experiences">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <img src="images/hikam-profile.png" alt="My Photo" class="photo-placeholder">
+        <h2>Hi! I'm <strong>Hikam</strong></h2>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is <strong>Hikam Fajduani</strong>, and I am an <strong>Information Systems</strong> student at the <strong>University of Indonesia.</strong> I thrive on learning new things and am passionate about <strong>graphic design</strong> and <strong>video editing.</strong> I am highly interested in <strong>UI/UX</strong> and <strong>frontend development.</strong> Teamwork comes naturally to me, and I am known for my strong work ethic. Despite my fear of cats 😺🐈, I remain enthusiastic and dedicated in all my professional endeavors.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="wrapper"> 
+            <i id="left-projects" class="fa-solid  fas fa-angle-left"></i> 
+            <ul class="carousel"> 
+                <li class="card"> 
+                    <div class="img"><img src="images/project-simpro.jpg" alt="" draggable="false"> </div> 
+                    <h2 style="font-weight:bold;"> 
+                          SIMPRO 
+                    </h2> 
+                    <span>2024</span> 
+                    <p>SIMPRO (Sistem Informasi Manajemen Proyek) is a project management application to enhance the efficiency and effectiveness of construction project management. Designed with features tailored to project needs and a user-friendly interface, this application enables companies to easily and accurately monitor, organize, and control all aspects of construction projects.</p>
+                    <a href="https://www.figma.com/design/MDCkPcLLTkHknDMgexUyiT/Portofolio-UI%2FUX?node-id=6-98" target="_blank" rel="noopener noreferrer">View Hi-Fi</a>
+                </li> 
+                <li class="card"> 
+                    <div class="img"><img src="images/project - kms bemfmipa.jpg" alt="" draggable="false"> </div> 
+                    <h2 style="font-weight:bold;"> 
+                          KMS BEM FMIPA
+                    </h2> 
+                    <span>2024</span> 
+                    <p>KMS BEM FMIPA app serves as the go-to platform for BEM FMIPA UI 2024, facilitating seamless internal and external organizational management. Boasting features like FAQ, issue reporting, forums, and more, it's the ultimate tool for streamlined collaboration and problem-solving.</p>
+                    <a href="https://www.figma.com/design/MDCkPcLLTkHknDMgexUyiT/Portofolio-UI%2FUX?node-id=32-11391" target="_blank" rel="noopener noreferrer">View Hi-Fi</a>
+                </li> 
+                <li class="card"> 
+                    <div class="img"><img src="images/project-greencinque.jpg" alt="" draggable="false"> </div> 
+                    <h2 style="font-weight:bold;"> 
+                          GreenCinque 
+                    </h2> 
+                    <span>2023</span> 
+                    <p>GreenCinque innovates e-waste management, sorting and recycling electronics while generating jobs and a circular economy. Users deposit waste, creating roles for pickers and recyclers. Recycled products are sold on our e-commerce platform, benefiting both the environment and the economy.</p>
+                    <a href="https://www.figma.com/design/MDCkPcLLTkHknDMgexUyiT/Portofolio-UI%2FUX?node-id=2-5742" target="_blank" rel="noopener noreferrer">View Hi-Fi</a>
+                </li> 
+                <li class="card"> 
+                    <div class="img"><img src="images/project - nutricoach.jpg" alt="" draggable="false"> </div> 
+                    <h2 style="font-weight:bold;"> 
+                          NutriCoach 
+                    </h2> 
+                    <span>2023</span> 
+                    <p>NutriCoach is an AI health app offers personalized advice on exercise, nutrition, and health goals. Analyzing user data, it provides tailored support for healthier lifestyle choices, potentially reducing disease risks and improving community well-being.</p>
+                    <a href="https://www.figma.com/design/MDCkPcLLTkHknDMgexUyiT/Portofolio-UI%2FUX?node-id=32-16843" target="_blank" rel="noopener noreferrer">View Hi-Fi</a>
+                </li> 
+            </ul> 
+            <i id="right-projects" class="fa-solid fas fa-angle-right"></i> 
+        </div> 
+    </section>
+
+    <section id="experiences">
+        <h2>Social Media Managing Experiences</h2>
+        <div class="wrapper"> 
+            <i id="left-experiences" class="fa-solid  fas fa-angle-left"></i> 
+            <ul class="carousel"> 
+                <li class="card"> 
+                    <div class="img"><img src="images/instagram-bemfasilkom.jpg" alt="" draggable="false"> </div> 
+                    <h2 style="font-weight:bold;"> 
+                          BEM Fasilkom UI
+                    </h2> 
+                    <span>2021 - current</span> 
+                    <p>BEM Fasilkom UI is an executive student organization from the Faculty of Computer Science, University of Indonesia. At this organization, I work in managing publications and outgoing designs.</p>
+                    <a href="https://www.instagram.com/bemfasilkomui/" target="_blank" rel="noopener noreferrer">View More</a>
+                </li> 
+                <li class="card"> 
+                    <div class="img"><img src="images/instagram-pmbfasilkom.jpg" alt="" draggable="false"> </div> 
+                    <h2 style="font-weight:bold;"> 
+                          PMB Fasilkom UI
+                    </h2> 
+                    <span>2023</span> 
+                    <p>PMB Fasilkom is a coaching activity for new students at the Faculty of Computer Science, University of Indonesia. In this activity I act as head of the publication and design division.</p>
+                    <a href="https://www.instagram.com/pmbfasilkomui/" target="_blank" rel="noopener noreferrer">View More</a>
+                </li>
+                <li class="card"> 
+                    <div class="img"><img src="images/instagram-betisfasilkom.jpg" alt="" draggable="false"> </div> 
+                    <h2 style="font-weight:bold;"> 
+                          BETIS Fasilkom UI
+                    </h2> 
+                    <span>2022 - 2023</span> 
+                    <p>PMB Fasilkom is a coaching activity for new students at the Faculty of Computer Science, University of Indonesia. In this activity I act as head of the publication and design division.</p>
+                    <a href="https://www.instagram.com/betisfasilkomui/" target="_blank" rel="noopener noreferrer">View More</a>
+                </li>
+                <li class="card"> 
+                    <div class="img"><img src="images/instagram-kontingencsui.jpg" alt="" draggable="false"> </div> 
+                    <h2 style="font-weight:bold;"> 
+                          Kontingen CSUI
+                    </h2> 
+                    <span>2021- current</span> 
+                    <p>Kontingen CSUI is social media under "Bidang Minat dan Bakat" of BEM Fasilkom UI. On this social media I work on the design and publication of the content that comes out.</p>
+                    <a href="https://www.instagram.com/kontingencsui/" target="_blank" rel="noopener noreferrer">View More</a>
+                </li>
+                <li class="card"> 
+                    <div class="img"><img src="images/instagram-adkesmacsui.jpg" alt="" draggable="false"> </div> 
+                    <h2 style="font-weight:bold;"> 
+                          Adkesma CSUI
+                    </h2> 
+                    <span>2021 -current</span> 
+                    <p>Adkesma CSUI is social media under the supervision of the Student Advocacy and Welfare Department of BEM Fasilkom UI. On this social media, I work on publications and designs that come out.</p>
+                    <a href="https://www.instagram.com/adkesmacsui/" target="_blank" rel="noopener noreferrer">View More</a>
+                </li>
+                <li class="card"> 
+                    <div class="img"><img src="images/instagram-fesrakui.jpg" alt="" draggable="false"> </div> 
+                    <h2 style="font-weight:bold;"> 
+                          Festival Rakyat UI
+                    </h2> 
+                    <span>2021</span> 
+                    <p>Festival Rakyat UI is a festival and social activity under the Community Service Department of BEM University of Indonesia. In this activity I act as creative staff who works on videos such as podcasts, bumpers and so on.</p>
+                    <a href="https://www.instagram.com/festivalrakyat/" target="_blank" rel="noopener noreferrer">View More</a>
+                </li>
+                <li class="card"> 
+                    <div class="img"><img src="images/instagram-fass.jpg" alt="" draggable="false"> </div> 
+                    <h2 style="font-weight:bold;"> 
+                        Forum Anak Sulawesi Selatan
+                    </h2> 
+                    <span>2020 2021</span> 
+                    <p>Forum Anak Sulawesi Selatan is an organization under the Ministry of Women's Empowerment and Child Protection of the Republic of Indonesia. In this organization I work as a creative media and publication staff.</p>
+                    <a href="https://www.instagram.com/forumanaksulawesiselatan/" target="_blank" rel="noopener noreferrer">View More</a>
+                </li>
+            </ul> 
+            <i id="right-experiences" class="fa-solid fas fa-angle-right"></i> 
+        </div> 
+    </section>
+
+  <footer id="contact">
+      <h2>Let's keep in touch!</h2>
+      <div class="icons">
+         <a href="https://www.instagram.com/hikamfajduani/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/hikamfajduani/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/hikamfajduani" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+        </a>
     </div>
-
-    <div class="aboutme-container" id="about-me">
-      <h1>About Me</h1>
-      <div class="aboutme">
-          <img style="padding: 30px; margin: 0;" class="profile-photo" src="images/hikam-about.png">
-          <p>Hello! My name is <strong>Hikam Fajduani</strong>, and I am an <strong>Information Systems</strong> student at the <strong>University of Indonesia.</strong> I thrive on learning new things and am passionate about <strong>graphic design</strong> and <strong>video editing.</strong> I am highly interested in <strong>UI/UX</strong> and <strong>frontend development.</strong> Teamwork comes naturally to me, and I am known for my strong work ethic. Despite my fear of cats 😺🐈, I remain enthusiastic and dedicated in all my professional endeavors.</p>
-      </div>
-    </div>
-
-    <div class="slide-container swiper" id="projects">
-      <div class="sub-text">
-        <h3 style="margin-bottom: 20px; margin-top: 20px; font-weight: bold;">Project's</h3>
-      </div>
-      <div class="slide-content">
-          <div class="card-wrapper swiper-wrapper">
-              <div class="card swiper-slide">
-                  <div class="image-content">
-                      <div class="card-image">
-                         <img src="images/project-greencinque.jpg" alt="" class="card-img">
-                      </div>
-                  </div>
-    
-                  <div class="card-content">
-                      <h2 class="name">GreenCinque</h2>
-                      <h4 class="periodic-name">2023</h4>
-                      <p class="description">GreenCinque innovates e-waste management, sorting and recycling electronics while generating jobs and a circular economy. Users deposit waste, creating roles for pickers and recyclers. Recycled products are sold on our e-commerce platform, benefiting both the environment and the economy.</p>
-                      <a class="button" href="https://www.figma.com/design/MDCkPcLLTkHknDMgexUyiT/Portofolio-UI%2FUX?node-id=2-5742" target="_blank" rel="noopener noreferrer">View Hi-Fi</a>
-                  </div>
-              </div>
-              <div class="card swiper-slide">
-                <div class="image-content">
-                    <div class="card-image">
-                       <img src="images/project-simpro.jpg" alt="" class="card-img">
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h2 class="name">SIMPRO</h2>
-                    <h4 class="periodic-name">2024</h4>
-                    <p class="description">SIMPRO (Sistem Informasi Manajemen Proyek) is a project management application to enhance the efficiency and effectiveness of construction project management. Designed with features tailored to project needs and a user-friendly interface, this application enables companies to easily and accurately monitor, organize, and control all aspects of construction projects.</p>
-                    <a class="button" href="https://www.figma.com/design/MDCkPcLLTkHknDMgexUyiT/Portofolio-UI%2FUX?node-id=6-98" target="_blank" rel="noopener noreferrer">View Hi-Fi</a>
-                </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                  <div class="card-image">
-                     <img src="images/project - nutricoach.jpg" alt="" class="card-img">
-                  </div>
-              </div>
-
-              <div class="card-content">
-                  <h2 class="name">NutriCoach</h2>
-                  <h4 class="periodic-name">2023</h4>
-                  <p class="description">NutriCoach is an AI health app offers personalized advice on exercise, nutrition, and health goals. Analyzing user data, it provides tailored support for healthier lifestyle choices, potentially reducing disease risks and improving community well-being.</p>
-                  <a class="button" href="https://www.figma.com/design/MDCkPcLLTkHknDMgexUyiT/Portofolio-UI%2FUX?node-id=32-16843" target="_blank" rel="noopener noreferrer">View Hi-Fi</a>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                  <div class="card-image">
-                     <img src="images/project - kms bemfmipa.jpg" alt="" class="card-img">
-                  </div>
-              </div>
-
-              <div class="card-content">
-                  <h2 class="name">KMS BEM FMIPA UI</h2>
-                  <h4 class="periodic-name">2024</h4>
-                  <p class="description"> KMS BEM FMIPA app serves as the go-to platform for BEM FMIPA UI 2024, facilitating seamless internal and external organizational management. Boasting features like FAQ, issue reporting, forums, and more, it's the ultimate tool for streamlined collaboration and problem-solving.</p>
-                  <a class="button" href="https://www.figma.com/design/MDCkPcLLTkHknDMgexUyiT/Portofolio-UI%2FUX?node-id=32-11391" target="_blank" rel="noopener noreferrer">View Hi-Fi</a>
-              </div>
-            </div>
-          </div>
-      </div>
-    
-      <div style="color: #C5FF95;" class="swiper-button-next swiper-navBtn"></div>
-      <div style="color: #C5FF95;" class="swiper-button-prev swiper-navBtn"></div>
-      <div class="swiper-pagination" style="margin-top: 20px;"></div>
-    </div>
-
-
-    <div class="slide-container swiper" id="experiences">
-      <div class="sub-text">
-        <h3 style="margin-bottom: 20px; margin-top: 20px; font-weight: bold;">Social Media Managing Experience</h3>
-      </div>
-      <div class="slide-content">
-          <div class="card-wrapper swiper-wrapper">
-              <div class="card swiper-slide">
-                  <div class="image-content">
-                      <div class="card-image">
-                         <img src="images/instagram-bemfasilkom.jpg" alt="" class="card-img">
-                      </div>
-                  </div>
-    
-                  <div class="card-content">
-                      <h2 class="name">BEM Fasilkom UI</h2>
-                      <h4 class="periodic-name">2021 - current</h4>
-                      <p class="description">BEM Fasilkom UI is an executive student organization from the Faculty of Computer Science, University of Indonesia. At this organization, I work in managing publications and outgoing designs.</p>
-                      <a class="button" href="https://www.instagram.com/bemfasilkomui/" target="_blank" rel="noopener noreferrer">View More</a>
-                  </div>
-              </div>
-              <div class="card swiper-slide">
-                <div class="image-content">
-                    <div class="card-image">
-                       <img src="images/instagram-pmbfasilkom.jpg" alt="" class="card-img">
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h2 class="name">PMB Fasilkom</h2>
-                    <h4 class="periodic-name">2023</h4>
-                    <p class="description">PMB Fasilkom is a coaching activity for new students at the Faculty of Computer Science, University of Indonesia. In this activity I act as head of the publication and design division.</p>
-                    <a class="button" href="https://www.instagram.com/pmbfasilkomui/" target="_blank" rel="noopener noreferrer">View More</a>
-                </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                  <div class="card-image">
-                     <img src="images/instagram-betisfasilkom.jpg" alt="" class="card-img">
-                  </div>
-              </div>
-
-              <div class="card-content">
-                  <h2 class="name">BETIS Fasilkom UI</h2>
-                  <h4 class="periodic-name">2022 - 2023</h4>
-                  <p class="description">BETIS Fasilkom UI is a free study guidance activity for final year high school students who will continue their education to university and want to take the university entrance exam. In this activity I worked as a creative staff expert.</p>
-                  <a class="button" href="https://www.instagram.com/betisfasilkomui/" target="_blank" rel="noopener noreferrer">View More</a>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                  <div class="card-image">
-                     <img src="images/instagram-kontingencsui.jpg" alt="" class="card-img">
-                  </div>
-              </div>
-
-              <div class="card-content">
-                  <h2 class="name">Kontingen CSUI</h2>
-                  <h4 class="periodic-name">2021 - current</h4>
-                  <p class="description">Kontingen CSUI is social media under "Bidang Minat dan Bakat" of BEM Fasilkom UI. On this social media I work on the design and publication of the content that comes out.</p>
-                  <a class="button" href="https://www.instagram.com/kontingencsui/" target="_blank" rel="noopener noreferrer">View More</a>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                  <div class="card-image">
-                     <img src="images/instagram-adkesmacsui.jpg" alt="" class="card-img">
-                  </div>
-              </div>
-
-              <div class="card-content">
-                  <h2 class="name">Adkesma CSUI</h2>
-                  <h4 class="periodic-name">2022 - current</h4>
-                  <p class="description">Adkesma CSUI is social media under the supervision of the Student Advocacy and Welfare Department of BEM Fasilkom UI. On this social media, I work on publications and designs that come out.</p>
-                  <a class="button" href="https://www.instagram.com/adkesmacsui/" target="_blank" rel="noopener noreferrer">View More</a>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                  <div class="card-image">
-                     <img src="images/instagram-fesrakui.jpg" alt="" class="card-img">
-                  </div>
-              </div>
-
-              <div class="card-content">
-                  <h2 class="name">Festival Rakyat UI</h2>
-                  <h4 class="periodic-name">2021</h4>
-                  <p class="description">Festival Rakyat UI is a festival and social activity under the Community Service Department of BEM University of Indonesia. In this activity I act as creative staff who works on videos such as podcasts, bumpers and so on.</p>
-                  <a class="button" href="https://www.instagram.com/festivalrakyat/" target="_blank" rel="noopener noreferrer">View More</a>
-              </div>
-            </div>
-            <div class="card swiper-slide">
-              <div class="image-content">
-                  <div class="card-image">
-                     <img src="images/instagram-fass.jpg" alt="" class="card-img">
-                  </div>
-              </div>
-
-              <div class="card-content">
-                  <h2 class="name">Forum Anak Sulawesi Selatan</h2>
-                  <h4 class="periodic-name">2020 - 2021</h4>
-                  <p class="description">Forum Anak Sulawesi Selatan is an organization under the Ministry of Women's Empowerment and Child Protection of the Republic of Indonesia. In this organization I work as a creative media and publication staff.</p>
-                  <a class="button" href="https://www.instagram.com/forumanaksulawesiselatan/" target="_blank" rel="noopener noreferrer">View More</a>
-              </div>
-            </div>
-          </div>
-      </div>
-    
-      <div style="color: #C5FF95;" class="swiper-button-next swiper-navBtn"></div>
-      <div style="color: #C5FF95;" class="swiper-button-prev swiper-navBtn"></div>
-      <div class="swiper-pagination" style="margin-top: 20px;"></div>
-    </div>
-    
-    <!-- Swiper JS -->
-    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
-    
-    <!-- JavaScript -->
-    <!--Uncomment this line-->
-    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
-
-
-    <!-- Konten utama halaman Anda -->
-
-  <section id="contacts" class="footer">
-      <div class="footer-col">
-        <h4 style="font-weight:normal;">Let's keep in touch!</h4>
-        <div class="icons">
-            <a href="https://www.instagram.com/hikamfajduani/" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/hikamfajduani/" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/hikamfajduani" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-      </div>
-  </section>
   </div>
-
-<script>
-  var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 25,
-    loop: true,
-    centerSlide: 'true',
-    fade: 'true',
-    grabCursor: 'true',
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    breakpoints:{
-        0: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 2,
-        },
-        950: {
-            slidesPerView: 3,
-        },
-    },
-  });
-</script>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
